@@ -2,7 +2,7 @@ import {
 	PropTypes,
 } from 'react';
 
-import { StyleSheet, View } from 'module';
+import { StyleSheet, View } from 'react-native';
 
 import {
 	carbonStyles,
