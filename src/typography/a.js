@@ -1,4 +1,4 @@
-import {
+import React, {
 	PropTypes,
 } from 'react';
 import {
@@ -7,31 +7,31 @@ import {
 } from 'react-native';
 
 import {
-  carbonStyles,
+	carbonStyles,
 } from '../styles';
 
 const cs = StyleSheet.create(carbonStyles);
 
 const propTypes = {
-  children: PropTypes.oneOfType([
-    PropTypes.arrayOf(PropTypes.node),
-    PropTypes.node,
-    PropTypes.string,
-  ]),
-  style: PropTypes.any,
+	children: PropTypes.oneOfType([
+		PropTypes.arrayOf(PropTypes.node),
+		PropTypes.node,
+		PropTypes.string,
+	]),
+	style: PropTypes.any,
 };
 
 const defaultProps = {};
 
 export default function A(props) {
-  return (
-    <Text
-      {...props}
-      style={[cs.a, props.style]}
-    >
-      {props.children}
-    </Text>
-  );
+	return (
+		<Text
+			{...props}
+			style={[cs.a, props.style]}
+			>
+			{props.children}
+		</Text>
+	);
 }
 
 A.propTypes = propTypes;
