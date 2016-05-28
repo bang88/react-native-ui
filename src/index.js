@@ -1,3 +1,5 @@
+import {Column as Col, Row} from 'react-native-flexbox-grid';
+
 import A from './typography/a';
 import H1 from './typography/h1';
 import H2 from './typography/h2';
@@ -29,10 +31,10 @@ import Item from './list/item';
 import List from './list/list';
 
 export {
-  carbonStyles,
-  colors,
+carbonStyles,
+colors,
 } from './styles';
-
+export { Col, Row}
 export { H1 };
 export { H2 };
 export { H3 };
@@ -61,30 +63,32 @@ export { ItemHeaderText };
 export { ItemIcon };
 
 export default {
-  H1,
-  H2,
-  H3,
-  H4,
-  H5,
-  H6,
-  P,
-  A,
-  Toolbar,
-  ToolbarTitle,
-  ToolbarLeft,
-  ToolbarRight,
-  Button,
-  Card,
-  Badge,
-  Note,
-  Range,
-  Toggle,
-  Content,
-  Container,
-  List,
-  Item,
-  ItemContent,
-  ItemText,
-  ItemHeaderText,
-  ItemIcon,
+	H1,
+	H2,
+	H3,
+	H4,
+	H5,
+	H6,
+	P,
+	A,
+	Toolbar,
+	ToolbarTitle,
+	ToolbarLeft,
+	ToolbarRight,
+	Button,
+	Card,
+	Col,
+	Badge,
+	Note,
+	Range,
+	Toggle,
+	Content,
+	Container,
+	List,
+	Item,
+	ItemContent,
+	ItemText,
+	ItemHeaderText,
+	ItemIcon,
+	Row,
 };

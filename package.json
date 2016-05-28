@@ -4,8 +4,14 @@
   "description": "A set of UI components for building React Native apps.",
   "author": "",
   "contributors": [
-    { "name": "Tyler Buchea", "email": "tyler@buchea.com" },
-    { "name": "Josh Buchea", "email": "josh@buchea.com" }
+    {
+      "name": "Tyler Buchea",
+      "email": "tyler@buchea.com"
+    },
+    {
+      "name": "Josh Buchea",
+      "email": "josh@buchea.com"
+    }
   ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -31,5 +37,8 @@
     "eslint-config-airbnb": "^6.2.0",
     "eslint-plugin-react": "^4.2.3"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "react-native-flexbox-grid": "^0.2.2"
+  }
 }
