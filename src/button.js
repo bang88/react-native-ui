@@ -20,6 +20,7 @@ const cs = StyleSheet.create(carbonStyles);
 const propTypes = {
 	children: PropTypes.node,
 	text: PropTypes.string,
+	textColor: PropTypes.string,
 	size: PropTypes.string,
 	full: PropTypes.bool,
 	round: PropTypes.bool,
@@ -83,7 +84,7 @@ export default class Button extends Component {
 		const textSize = (this.props.size)
 			? (`btnText${this.capitalizeFirstLetter(this.props.size)}`)
 			: null;
-		const textColor = this.getTextColor(color, clear, outline);
+		const textColor = this.props.textColor || this.getTextColor(color, clear, outline);
 
 		if (clear) {
 			return (
