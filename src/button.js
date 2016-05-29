@@ -129,7 +129,11 @@ export default class Button extends Component {
 						this.props.style,
 					]}
 					>
-					<Text style={[textColor && cs[textColor], textSize && cs[textSize], cs.row]}>
+					<Text
+						style={[
+							textColor && cs[textColor] || { color: textColor },
+							textSize && cs[textSize], cs.row
+						]}>
 						{contents}
 					</Text>
 				</View>
